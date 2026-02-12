@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Enter 💖</title>
-  <link rel="stylesheet" href="style.css">
+<title>For My Love 💖</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="center">
 
-<h2>For my Love💕</h2>
+<body class="center dark">
+
+<h2>For My Love 💕</h2>
 <p>Enter the password</p>
 
-<input id="pass" type="password" placeholder="hint: her name 😉">
+<input id="pass" type="password">
 <br><br>
 <button onclick="check()">ENTER</button>
 
 <script>
 function check(){
-  if(document.getElementById("pass").value === "24072022"){
-    window.location.href = "welcome.html";
+  if(document.getElementById("pass").value.toLowerCase() === "24072022"){
+    window.location.href="welcome.html";
   } else {
     alert("Wrong password 😛");
   }
